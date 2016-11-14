@@ -5,6 +5,7 @@ import { Component } from 'angular2/core';
     template:
     `<div (click)='onClick($event)' [style.display]='isHidden ? "block" : "none"' class='glyphicon glyphicon-star-empty'></div>
     <div (click)='onClick($event)'  [style.display]='!isHidden ? "block" : "none"' class='glyphicon glyphicon-star'></div>
+    
    `
 
 })
