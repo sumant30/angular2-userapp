@@ -1,4 +1,4 @@
-import { Component } from 'angular2/core';
+import { Component,Input } from 'angular2/core';
 
 @Component({
     selector:'heart',
@@ -15,17 +15,17 @@ import { Component } from 'angular2/core';
 })
 
 export class HeartComponent {
-        likes : number = 10;
-        isSelected :boolean = false;
+        @Input ()   likes : number = 10;
+        @Input ()   isSelected :boolean = false;
 
         onClick(){
             this.isSelected=!this.isSelected;
 
             if(this.isSelected){
-                this.likes = 11;
+                this.likes = this.likes+1;
             }
             else{
-                this.likes = 10;
+                this.likes = this.likes-1;
             }
         }
 
