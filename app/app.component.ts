@@ -5,13 +5,14 @@ import { StarComponent } from './star.component';
 import { HeartComponent } from './heart.component';
 import { VotingComponent } from './voting.component';
 import { TweetComponent } from './tweet.component';
+import { ZippyComponent } from './zippy.component';
+import { ContentFormComponent } from './content-form.component';
 
 @Component({
     selector: 'my-app',
-    template: `<h1>My First Angular 2 </h1>
-                
-                <tweet></tweet>
-                `,
-    directives: [CoursesComponent,AuthorsComponent,StarComponent,HeartComponent,VotingComponent,TweetComponent]
+   template: `
+                   <content-form></content-form>
+               `,
+    directives: [ContentFormComponent]
 })
 export class AppComponent { }
