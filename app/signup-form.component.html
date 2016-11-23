@@ -8,11 +8,15 @@
             ngControl="username"
             #username="ngForm"
             >
+            <div *ngIf="username.control.pending" >Checking..</div>
             <div *ngIf="username.touched && username.errors?.required"  class="alert alert-danger">
                 Username is required.
             </div>
              <div *ngIf="username.touched && username.errors?.cannotContainspace"  class="alert alert-danger">
                 Username cannot have space.
+            </div>
+            <div *ngIf="username.touched && username.errors?.shouldBeUnique"  class="alert alert-danger">
+                Username already exists.
             </div>
     </div>
     <div class="form-group">
