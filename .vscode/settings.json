@@ -4,6 +4,44 @@
     "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.tabCompletion": true,
     "html.suggest.html5": true,
-    "html.format.enable": true
+    "html.format.enable": true,
+    "workbench.editor.showIcons": true,
+
+    // Maximum amount of characters per line (0 = disable).
+    "html.format.wrapLineLength": 120,
+
+    // List of tags, comma separated, that shouldn't be reformatted. 'null' defaults to all tags listed at https://www.w3.org/TR/html5/dom.html#phrasing-content.
+    "html.format.unformatted": "a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, q, samp, script, select, small, span, strong, sub, sup, textarea, tt, var",
+    // JSON
+
+    // Associate schemas to JSON files in the current project
+    "json.schemas": [],
+
+    // Enable/disable default JSON formatter (requires restart)
+    "json.format.enable": true,
+
+     // Enable/disable default TypeScript formatter.
+    "typescript.format.enable": true,
+
+    // Defines space handling after a comma delimiter.
+    "typescript.format.insertSpaceAfterCommaDelimiter": true,
+
+    //  Defines space handling after a semicolon in a for statement.
+    "typescript.format.insertSpaceAfterSemicolonInForStatements": true,
+
+    // Defines space handling after a binary operator.
+    "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+
+    // Defines space handling after keywords in control flow statement.
+    "typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+
+    // Defines space handling after function keyword for anonymous functions.
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+
+    // Defines space handling after opening and before closing non empty parenthesis.
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+
+    // Defines space handling after opening and before closing non empty brackets.
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false
 
 }
